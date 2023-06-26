@@ -1,0 +1,178 @@
+*{
+    margin: 0px;
+    border: 0px;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0cbaba;
+    background-image: linear-gradient(315deg, #2992e7 0%, #4e134c 74%);
+}
+
+:root {
+    --main-wheat-color: wheat;
+    --main-dark-color: rgb(58, 24, 5);
+    --second-dark-color: rgb(110, 52, 18);
+    --white-color: white;
+    --gold-color: rgb(156, 136, 21);
+    --blue-color: blue;
+    --blue-dark: rgb(38, 38, 143);
+    --black-color: black;
+    --black-transparency: rgba(0, 0, 0, 0.301);
+    --green-transparency: rgba(9, 99, 105, 0.24);
+    --orange: orange;
+  }
+
+.header{
+    background-color: var(--blue-dark);
+    color: var(--white-color);
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.mainContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.card  {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.card .contentCard{
+    padding: 20px;
+    text-align: center;
+    color: yellow;
+}
+
+.contentCard .cardTitle{
+    letter-spacing: 5px;
+    font-size: 2rem;
+    text-transform: capitalize;
+    
+}
+
+.contentCard .cardText{
+    color: white;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.contentCounter{
+    width: 100%;
+}
+
+.countNumberBoxes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.countNumberBoxes .box{
+    background-color: var(--black-color);
+    color: orange;
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border: 1px solid white;
+}
+
+.box .boxNumber{
+    font-size: 2rem;
+}
+
+.box .boxText{
+    color: white;
+}
+
+h3, .date{
+    font-size: 1.5rem;
+    font-weight: 100;
+    /* color: rgb(13, 221, 248); */
+    color: white;
+    width: 80%;
+    text-align: center;
+    width: 100%;
+    margin: 40px 0px;
+}
+
+/* Media Querys ******************/
+
+
+@media only screen and (min-width: 600px){
+
+    .card{
+        width: 60%;
+        margin-top: 20px;
+    }
+
+    .contentCounter{
+        width: 80%;
+    }
+
+    .countNumberBoxes .box{
+        width: 100px;
+        height: 100px;
+    }
+
+    .box .boxNumber{
+        font-size: 3rem;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 1024px)  {
+
+    .card{
+        flex-direction: row;
+    }
+
+    img{
+        width: 60%;
+    }
+
+    .contentCounter{
+        width: 50%;
+        margin-top: 10px;
+    }
+
+    .countNumberBoxes .box{
+        width: 120px;
+        height: 120px;
+    }
+
+}
